@@ -2,40 +2,55 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="h-[90vh] max-container overflow-hidden flex-row flex relative mx-auto bg-gradient-to-l from-blue-100 to-gray-100" id="hero">
-
-      <div className='relative ml-14 flex flex-col items-center justify-center w-1/2'>
-        <div className='p-8 flex flex-col'>
-          <p className="small-2 text-rose-400 ml-4 mb-4">Beyond Cloud Storage</p>
-          <p className=" h1 mb-6 uppercase bg-gradient-to-br from-blue-400 to-blue-700 bg-clip-text text-transparent">AI-Powered Digital Storage</p>
-          {/* <p className="body-1 text-black">❝ Let AI transform how you manage your digital world - From Automatic Organization to Predictive File Suggestions ❞
-          </p> */}
-
+    <section className="relative min-h-screen max-container overflow-hidden flex max-md:flex-wrap flex-row mx-auto items-center justify-center mt-10" id="hero">
+      <div className="relative flex flex-col lg:w-3/5 w-full max-[640px]:mx-auto max-md:ml-5 max-md:-top-40 space-y-7 z-10 md:justify-center md:-top-20 lg:-top-1 lg:space-y-7 lg:tracking-widest">
+          <p className="text-rose-400 max-md:whitespace-nowrap max-md:mt-60 z-10 text-xl 
+          md:mt-20 md:text-2xl lg:text-xl lg:mt-5">Beyond Cloud Storage</p>
+          <p className="mb-6 max-md:font-extrabold max-md:text-5xl bg-gradient-to-br from-blue-400 to-blue-700 bg-clip-text text-transparent z-10 md:w-96 md:h2 lg:w-[500px]">AI POWERED DIGITAL STORER & <span className='lg:whitespace-nowrap'>WORK SPACE</span></p>
           <p className="
-          before:content-['Let_AI_transform_how_you_manage_your_digital_world']
+          before:content-['Store_,_organize_,_and_discover_your_content_with_intelligent_assistance_that_understands_your_needs_._Let_Ai_guard_&_manage_your_digital_workspace']
           before:text-black
 
-          after:content-['_From_automatic_organization_to_predictive_file_suggestions']
-          after:text-rose-400
+          after:content-['_From_Automatic_organization_to_predictive_file_suggestions_AND_more']
+          after:text-rose-500
+          z-10
           text-xl
-          tracking-wide
+
+          md:text-4xl
+          md:w-80
+          md:-right-80
+          md:top-32
+          md:relative
+          tracking-widest
+
+          lg:text-[17px]
+          lg:top-0
+          lg:left-0
+          lg:tracking-tight
+          lg:leading-normal
+          lg:w-96
           "></p>
 
-          <div className='flex flex-row gap-3 mt-7'>
-            <button className='border-2  border-blue-600 rounded-3xl w-72 h-12'>Free Trial for 30 days</button> 
-            <button className='border-2  border-blue-600 rounded-3xl w-72 h-12'>See Demo</button>
+          <div className="flex flex-row gap-3 font-medium 
+          md:relative md:-top-72 lg:-top-0">
+            <button className='border-2 md:border-4 border-blue-500 rounded-full h-10 w-24 z-10 
+            md:h-20 md:w-28 md:text-2xl lg:border-2 lg:text-xl lg:h-10 lg:w-28 lg:font-thin'>Free Trial</button>
+            <button className='border-2 md:border-4 border-blue-500 rounded-full h-10 w-24 z-10 
+            md:h-20 md:w-32 md:text-2xl md:whitespace-nowrap lg:border-2 lg:text-xl lg:h-10 lg:w-28 lg:font-thin'>See Demo</button>
           </div>
-        </div>
       </div>
 
-      <div 
-        className="absolute inset-0 bg-no-repeat bg-right-top rounded-3xl scale-img_lg"
-        style={{
-          backgroundImage: 'url(assets/image.png)',
-          backgroundSize: 'auto 100%',
-        }}
-      >
-        <div className='relative inset-0 bg-no-repeat left-[690px] top-24 h-60 w-60' style={{backgroundImage: 'url(assets/BlueBall22.png)', backgroundSize: 'auto 100%'}}></div>
+      <div className="max-lg:absolute hero-img_res mobileXL xl:mt-10 xl:scale-150 xl:mr-28 2xl:mr-20 2xl:scale-110 2xl:mt-8">
+        <img
+          src='assets/image.png' 
+          className='md:scale-150'
+        />
+      </div>
+
+      <div className='absolute -z-10 xl:top-16 xl:ml-24 xl:h-96 xl:w-96 max-xl:hidden 2xl:top-10'>
+        <img
+          src='assets/BlueBall22.png'        
+        />
       </div>
     </section>
   )

@@ -10,15 +10,14 @@ function App () {
     //   <Feature/>
     // </div>
 
-    <main className="relative max-w-[90vw] mx-auto">
+    <main className="relative mx-auto space-y-10">
       <Header/>
-      <section>
+      <section className="max-w-[90vw] mx-auto">
         <Hero/>
       </section>
-      <div className="space-y-20">
-        <section className="border-2 border-black">
-          feature
-        </section>
+      <div className="relative space-y-20 bg1 min-w-[100vw]">
+        
+          <Feature/>
         <section className="border-2 border-black">
           why choose us ? 
         </section>

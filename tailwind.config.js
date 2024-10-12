@@ -10,6 +10,10 @@ export default {
         inter: ["Inter", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
+      screens: {
+        'wide': '1550px',
+      },
+      
     },
   },
   plugins: [],

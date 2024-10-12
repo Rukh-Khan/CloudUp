@@ -4,34 +4,54 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  overflow-x: hidden;
-}
-body {
-  position: relative;
-  width: 100%;
-}
-
-.hero-img_res {
-  @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[1160px] max-md:bottom-[-590px] max-md:left-[calc(50%-390px)] max-md:top-auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.container {
-  @apply mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
+@layer base {
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  body {
+    position: relative;
+    width: 100%;
+    background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
+  }
 }
 
-.caption {
-  @apply small-2 mb-5 uppercase;
+
+@layer components {
+  .max-container {
+    max-width: 1550px;
+    margin: 0 auto;
+  }
 }
 
 @layer utilities {
+  
+  .nav_ul {
+    @apply flex flex-col sm:flex-row gap-16;
+  }
+
+  .nav_li {
+    @apply max-sm:bg-blue-100 max-sm:w-full sm:hover:scale-110 tracking-wide max-sm:rounded-full max-sm:py-2 max-sm:px-4 transition-all duration-300 ease-in-out;
+  }
+
+  .navSideBar {
+    @apply absolute left-0 right-0 top-20 bg-gradient-to-tr from-blue-50 to-blue-100 transition-all duration-500 ease-in-out overflow-hidden rounded-b mx-auto;
+  }
+
   /* START of Typography */
   .h-num {
     @apply font-inter text-[72px] font-bold leading-[84px];
   }
 
   .h1 {
-    @apply text-[84px] font-black leading-[84px] tracking-[-0.03em];
+    @apply text-[60px] font-black leading-[84px] tracking-[-0.03em];
   }
 
   .h2 {
@@ -75,7 +95,7 @@ body {
   }
 
   .base-small {
-    @apply text-[14px] font-semibold leading-[18px] tracking-[0.03em];
+    @apply text-[15px] leading-[18px] tracking-[0.03em] font-poppins;
   }
 
   .small-1 {
@@ -83,32 +103,46 @@ body {
   }
 
   .small-2 {
-    @apply text-[15px] font-bold leading-[16px] tracking-[0.3em];
+    @apply text-[15px] font-bold leading-[18px] tracking-[0.2em];
   }
 
   .small-compact {
     @apply text-[12px] font-semibold leading-[18px] tracking-[0.03em];
   }
-}
 
-.g1 {
-  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
-}
+  .container {
+    @apply mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
+  }
+  
+  .caption {
+    @apply small-2 mb-5 uppercase;
+  }
 
-.scroll-hide::-webkit-scrollbar {
+  .hero-img_res {
+    @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[1160px] max-md:bottom-[-520px] max-md:left-[calc(20%-520px)] max-md:top-auto md:left-[calc(30%-250px)] md:top-16;
+  }
+
+  .scroll-hide::-webkit-scrollbar {
     display: none;
+  }
+
+  .scroll-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .bg1 {
+    background: #667db6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
 }
 
-.scroll-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-.scale-img_lg{
-  @apply lg:scale-150 lg:right-40 lg:top-5 z-10;
+@media (min-width: 425px) and (max-width: 768px) {
+  .hero-img_res {
+    left: calc(35% - 500px);
+  }
 }
 
-.max-container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
+
   
