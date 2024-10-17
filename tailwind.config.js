@@ -11,7 +11,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       screens: {
-        'wide': '1550px',
+        'wide': '1440px', 
       },
       
     },
