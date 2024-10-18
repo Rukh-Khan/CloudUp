@@ -45,7 +45,7 @@ const Testimonials = () => {
                                 >
                                     <div style={{backgroundImage: `url(${item.img})`}} key={index} className="bg-cover z-10 bg-center relative mx-auto h-80 w-80 rounded-full"/>
 
-                                    <div className="h-full w-full md:h-[420px] md:w-[500px] lg:h-96 lg:w-96 border-2 border-black relative bottom-20 rounded-3xl left-[10%] md:left-[26%] lg:left-[33%] 2xl:left-[37%]" >
+                                    <div className="h-full w-full md:h-[420px] md:w-[500px] border-2 border-black relative bottom-20 rounded-3xl left-[10%] md:left-[26%] lg:left-[33%] 2xl:left-[31%]" >
                                         <div className="p-2 m-10 mt-20 lg:text-center">
                                             <h4 className="body-1 mb-0.5 text-p1">{item.name}</h4>
                                             <p className="uppercase">{item.role}</p>

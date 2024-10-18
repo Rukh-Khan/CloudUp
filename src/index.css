@@ -89,7 +89,7 @@ body{
   }
 
   .hero_ball {
-    @apply xl:top-16 xl:ml-20 xl:h-96 xl:w-96 max-xl:hidden 2xl:top-10
+    @apply xl:top-16 xl:ml-20 xl:h-96 xl:w-96 max-xl:hidden 2xl:top-16
   }
 
   .month_btn {
@@ -110,6 +110,10 @@ body{
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding-bottom: 0.2em; /* Adjust this value to control the space between text and underline */
+  }
+
+  .hero_btn {
+    @apply bg-blue-200 rounded-3xl lg:rounded-full h-10 w-24 z-10 md:h-20 md:w-32 md:text-2xl lg:border-2 lg:text-xl lg:h-10 lg:w-28 font-thin;
   }
 
   .hero-img_res {

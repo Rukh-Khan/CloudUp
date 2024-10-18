@@ -15,10 +15,8 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-row gap-3 font-medium md:relative lg:-top-0">
-              <button className=' bg-blue-200 rounded-3xl lg:rounded-full h-10 w-24 z-10 
-              md:h-20 md:w-32 md:text-2xl lg:border-2 lg:text-xl lg:h-10 lg:w-28'>Free Trial</button>
-              <button className='bg-blue-200 rounded-3xl lg:rounded-full h-10 w-24 z-10 
-              md:h-20 md:w-32 md:text-2xl md:whitespace-nowrap lg:border-2 lg:text-xl lg:h-10 lg:w-28 '>See Demo</button>
+              <button className='hero_btn'>Free Trial</button>
+              <button className='md:whitespace-nowrap hero_btn'>See Demo</button>
             </div>
         </div>
 
