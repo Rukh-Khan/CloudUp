@@ -21,7 +21,7 @@ const Feature = () => {
           <div className='col-span-1 flex flex-col gap-10 md:p-2 md:py-1 md:rounded-none mx-auto'> 
               {
                 features.map((item) => (
-                  <div style={{top: `calc(64px + ${item.id*20}px)`}} className='p-5 bg-gradient-to-l from-blue-200 to-blue-500 w-full flex flex-col sticky sm:flex-row justify-center gap-10 items-center border-2 rounded-3xl' key={item.id}>
+                  <div style={{top: `calc(64px + ${item.id*40}px)`}} className='p-5 bg-gradient-to-l from-blue-200 to-blue-500 w-full flex flex-col sticky sm:flex-row justify-center gap-10 items-center border-2 rounded-3xl' key={item.id}>
                     <div className='flex flex-col gap-5 text-2xl'>
                           <div className='inline-flex gap-4 items-center'>
                             <CircleCheck/>
@@ -38,7 +38,7 @@ const Feature = () => {
           </div>
 
           <div className="col-span-1 p-2 max-lg:hidden">
-            <img src='assets/uploadYourFolder.png' className='md:sticky md:top-16 pt-16'/>
+            <img src='../../assets/uploadYourFolder.png' className='md:sticky md:top-16 pt-16'/>
           </div>
         </div>
       </div>

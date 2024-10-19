@@ -24,51 +24,45 @@ export const navLinks = [
 export const features = [
     {
         id: 1,
-        icon: 'assets/brain.png',
         title: 'Intelligent Organization',
         text: "AI automatically categorizes and tags your files for effortless discovery",
         line: "50% less time spent organizing",
-        img: 'assets/featuresIMG/creative-ideas-icons.png'
+        img: '../../assets/featuresIMG/creative-ideas-icons.png'
     },
     {
         id: 2,
-        icon: 'assets/search.png',
         title: 'Smart Search',
         text: "Find any file using natural language, even if you don't remember the exact name",
         line: "Instant file retrieval",
-        img: 'assets/featuresIMG/search.png'
+        img: '../../assets/featuresIMG/search.png'
     },
     {
         id: 3,
-        icon: 'assets/suggestion.png',
         title: 'Predictive Suggestions',
         text: "Get relevant files recommended based on your work patterns and schedule",
         line: "Get ahead of the competition",
-        img: 'assets/featuresIMG/predictiveSuggestions2.png'
+        img: '../../assets/featuresIMG/predictiveSuggestions2.png'
     },
     {
         id: 4,
-        icon: 'assets/workflow.png',
         title: 'Automated Workflows',
         text: "Let AI handle repetitive tasks like file naming, sorting, and backup",
         line: "Save 5% hours Weekly",
-        img: 'assets/featuresIMG/automated-workflows.jpg'
+        img: '../../assets/featuresIMG/automated-workflows.jpg'
     },
     {
         id: 5,
-        icon: 'assets/collaboration.png',
         title: 'Secure Collaboration',
         text: "Share and work together with AI-powered access controls and real-time sync",
         line: "Team Productivity Boost",
-        img: 'assets/featuresIMG/secure-collab.PNG'
+        img: '../../assets/featuresIMG/secure-collab.PNG'
     },
     {
         id: 6,
-        icon: 'assets/cross-platform.png',
         title: 'Cross Platform Access',
         text: "Seamlessly work across all your devices with intelligent sync prioritization",
         line: "Work from anywhere",
-        img: 'assets/featuresIMG/cross-platformPNG.png'
+        img: '../../assets/featuresIMG/cross-platformPNG.png'
     }
 ]
 
@@ -161,14 +155,14 @@ export const testimonials = [
         name: "Rodrick Ben",
         role: "Global Nomad",
         text: "CloudUp has been a game changer for my organization. It's easy to use, and I can easily share files with my team. I highly recommend it!",
-        img: 'assets/testimonials/user1.jpg'
+        img: '../../assets/testimonials/user1.jpg'
     },
     {
         id: "2",
         name: "Mark L.",
         role: "Small business Owner",
         text: "CloudUp has transformed how we handle our digital assets. The AI-powered search function is incredibly intuitive, saving us hours each week. It's like having a brilliant personal assistant managing our files!",
-        img: 'assets/testimonials/user3.jpg'
+        img: '../../assets/testimonials/user3.jpg'
 
     },
     {
@@ -176,28 +170,28 @@ export const testimonials = [
         name: "Adele M.",
         role: "Research Scientist",
         text: "The natural language processing in CloudUp is truly next-level.It's dramatically accelerated my literature review process. CloudUp isn't just storage; it's a research assistant.",
-        img: 'assets/testimonials/user5.jpg'
+        img: '../../assets/testimonials/user5.jpg'
     },
     {
         id: "4",
         name: "Derrick M.",
         role: "Software Developer",
         text: "CloudUp has transformed how we handle our digital assets. The AI-powered search function is incredibly intuitive, saving us hours each week. It's like having a brilliant personal assistant managing our files!",
-        img: 'assets/testimonials/user4.jpg'
+        img: '../../assets/testimonials/user4.jpg'
     }
 ]
 
 export const logo = [
-    "assets/logos/apple.png",
-    "assets/logos/playstore.png",
-    "assets/logos/web.png",
-    "assets/logos/windows.png",
+    "../../assets/logos/apple.png",
+    "../../assets/logos/playstore.png",
+    "../../assets/logos/web.png",
+    "../../assets/logos/windows.png",
 ]
 
 export const socials = [
-    "assets/socials/discord.svg",
-    "assets/socials/instagram.svg",
-    "assets/socials/linkedin.svg",
-    "assets/socials/threads.svg",
-    "assets/socials/x.svg",
+    "../../assets/socials/discord.svg",
+    "../../assets/socials/instagram.svg",
+    "../../assets/socials/linkedin.svg",
+    "../../assets/socials/threads.svg",
+    "../../assets/socials/x.svg",
 ]

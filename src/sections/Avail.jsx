@@ -24,7 +24,7 @@ const Avail = () => {
                 </div>
 
                 <div className="mt-28">
-                    <img src='assets/BigPic.PNG' className='w-full border-l-2 rounded-3xl xl:mt-28 2xl:mt-20 relative xl:top-4 xl:-right-20'/>
+                    <img src='../../assets/BigPic.PNG' className='w-full border-l-2 rounded-3xl xl:mt-28 2xl:mt-20 relative xl:top-4 xl:-right-20'/>
                 </div>
             </div>
         </div>

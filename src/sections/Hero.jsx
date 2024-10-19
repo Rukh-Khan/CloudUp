@@ -22,14 +22,14 @@ const Hero = () => {
 
         <div className="max-lg:absolute hero-img_res hero_img">
           <img
-            src='assets/image.png' 
+            src='../../assets/image.png' 
             className='md:scale-150'
           />
         </div>
 
         <div className='absolute -z-10 hero_ball'>
           <img
-            src='assets/BlueBall22.png'        
+            src='../../assets/BlueBall22.png'        
           />
         </div>
       </div>
