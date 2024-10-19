@@ -4,7 +4,7 @@ const Footer = () => {
     <footer className='relative bg-gradient-to-r from-gray-100 to-blue-100'>
         <div className=" max-container min-h-screen lg:mt-20 xl:mt-0 z-10">
             <div className='flex max-lg:flex-col flex-row justify-center items-center'>
-                <div className="bg-[url('assets/heroFolder.png')] max-lg:bg-cover bg-center bg-contain bg-no-repeat min-h-screen w-full relative xl:-left-72 2xl:-left-80 z-10">
+                <div className="bg-[url('../../assets/heroFolder.png')] max-lg:bg-cover bg-center bg-contain bg-no-repeat min-h-screen w-full relative xl:-left-72 2xl:-left-80 z-10">
                     <div className='relative flex flex-row justify-center items-center font-bold opacity-60 footer_txt'>
                         <p>© Copyright CloudUp, LLC. </p>
                         <p>Privacy Policy</p>
