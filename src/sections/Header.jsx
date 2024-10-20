@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <header className='top-5 lg:top-0 right-0 left-0 z-50 w-full fixed bg-gradient-to-br from-blue-50 to-gray-50 max-lg:border-2 max-lg:rounded-full max-lg:shadow-xl max-md:shadow-blue-200'>
-      <div className='max-container'>
+      <div className='container'>
         <nav className='flex flex-row justify-between py-4'>
           <div className='inline-flex gap-3'>
             <a href='/'>

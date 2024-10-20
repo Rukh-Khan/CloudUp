@@ -17,11 +17,11 @@ const Feature = () => {
         <div className='text-center flex justify-center md:mb-10'>
           <h1 className='h1 bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent uppercase'>Features</h1>
         </div>
-        <div className='grid grid-cols-2 max-lg:grid-cols-1'>
-          <div className='col-span-1 flex flex-col gap-10 md:p-2 md:py-1 md:rounded-none mx-auto'> 
+        <div className='relative grid grid-cols-2 max-lg:grid-cols-1'>
+          <div className='relative col-span-1 flex flex-col gap-10 md:p-2 md:py-1 md:rounded-none mx-auto'> 
               {
                 features.map((item) => (
-                  <div style={{top: `calc(64px + ${item.id*40}px)`}} className='p-5 bg-gradient-to-l from-blue-200 to-blue-500 w-full flex flex-col sticky sm:flex-row justify-center gap-10 items-center border-2 rounded-3xl' key={item.id}>
+                  <div style={{top: `calc(64px + ${item.id*20}px)`}} className='p-5 bg-gradient-to-l from-blue-200 to-blue-500 w-full flex flex-col sticky sm:flex-row justify-center gap-10 items-center border-2 rounded-3xl' key={item.id}>
                     <div className='flex flex-col gap-5 text-2xl'>
                           <div className='inline-flex gap-4 items-center'>
                             <CircleCheck/>

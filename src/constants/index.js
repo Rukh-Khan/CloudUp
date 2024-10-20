@@ -91,7 +91,7 @@ export const pricing = [
     },
     {
         id: 3,
-        title: "EntrerPrise",
+        title: "EnterPrise",
         priceMonthly: 49.99,
         priceYearly: 36.99,
         features: [

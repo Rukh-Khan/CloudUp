@@ -16,10 +16,10 @@
     overflow-x: hidden;
   }
   
-  body {
+  /* body {
     position: relative;
     width: 100%;
-  }
+  } */
 }
 
 body{
@@ -35,6 +35,10 @@ body{
 }
 
 @layer utilities {
+
+  .container {
+    @apply mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
+  }
   
   .nav_ul {
     @apply flex flex-col sm:flex-row gap-16;
@@ -85,7 +89,7 @@ body{
   }
 
   .hero_img{
-    @apply xl:mt-10 xl:scale-150 xl:mr-32 2xl:mr-20 2xl:scale-110 2xl:mt-14
+    @apply xl:mt-32 xl:scale-125 xl:mr-32 2xl:mt-14 2xl:mr-20 2xl:scale-110;
   }
 
   .hero_ball {

@@ -16,14 +16,26 @@ const FaqItem = ({ item, index }) => {
 
   return (
     <div
-      className="group flex cursor-pointer border-2 border-blue-600 rounded-3xl p-4 bg-gradient-to-r from-blue-200 to-blue-400"
+      className="group flex flex-col cursor-pointer border-2 border-blue-600 rounded-3xl p-4 bg-gradient-to-r from-blue-200 to-blue-400"
       onClick={() => setIsOpen(!isOpen)}
     >
+      <div className='flex flex-row justify-between'>
+        <div className='mb-2 w-14 h-14 rounded-full bg-gradient-to-l from-blue-300 to-blue-600 content content-center text-center h4'>
+            {index < 10 ? '0' : ''}
+            {index + 1}
+          </div>
+
+          <div
+          className={clsx(
+            "faq-icon relative flex size-12 items-center justify-center rounded-full border-2 shadow-lg shadow-rose-500 transition-all duration-100 group-hover:scale-110",
+            isOpen && "after:rotate-0"
+          )}
+          >
+            <div className="size-11/12 rounded-full shadow-300 bg-blue-500" />
+          </div>
+      </div>
+
       <div className='font-bold font-poppins flex-1'>
-        <div className='mb-2 w-20 h-20 rounded-full bg-gradient-to-l from-blue-300 to-blue-600 content content-center text-center h3'>
-          {index < 10 ? '0' : ''}
-          {index + 1}
-        </div>
         <div className="que">
           {item.question}
           <div
@@ -40,14 +52,6 @@ const FaqItem = ({ item, index }) => {
             </p>
           </div>
         </div>
-      </div>
-      <div
-        className={clsx(
-          "faq-icon relative flex size-12 items-center justify-center rounded-full border-2 shadow-lg shadow-rose-500 transition-all duration-100 group-hover:scale-110",
-          isOpen && "after:rotate-0"
-        )}
-      >
-        <div className="size-11/12 rounded-full shadow-300 bg-blue-500" />
       </div>
     </div>
   );

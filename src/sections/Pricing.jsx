@@ -13,7 +13,7 @@ const Pricing = () => {
   }
   return (
     <section id="pricing"> 
-      <div className="max-container min-h-screen max-md:mt-20 lg:mt-20 max-sm:p-1">
+      <div className="max-container min-h-screen max-md:mt-20 lg:mt-20 max-sm:p-1 mx-auto">
         <div className='text-center flex flex-col justify-center gap-2'>
             <h1 className='h1 bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent uppercase'>Pricing</h1>
             <p className='h3 lg:h1'>Your <span className='blue-highlight-with-line max-md:pb-[0.3em]'> All-in-One</span> AI Storage Solution: Boost Productivity by 27%</p>

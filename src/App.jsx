@@ -5,10 +5,11 @@ import Hero from "./sections/Hero";
 import FAQ from "./sections/FAQ";
 import Testimonials from "./sections/Testimonials";
 import Avail from "./sections/Avail";
+import Subscribe from "./sections/Subscribe";
 import Footer from "./sections/Footer";
 function App () {
   return (
-    <main className="relative">
+    <main className="max-sm:overflow-hidden">
       <Header/>
       <Hero/>
       <Feature/>
@@ -16,6 +17,7 @@ function App () {
       <FAQ/>
       <Testimonials/>
       <Avail/>
+      <Subscribe/>
       <Footer/>
     </main>
   )
