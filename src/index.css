@@ -15,11 +15,6 @@
   body {
     overflow-x: hidden;
   }
-  
-  /* body {
-    position: relative;
-    width: 100%;
-  } */
 }
 
 body{
@@ -68,6 +63,10 @@ body{
     @apply text-[64px] font-black leading-[64px];
   }
 
+  .h22 {
+    @apply text-[60px] font-black leading-[64px];
+  }
+
   .h3 {
     @apply text-[48px] font-extrabold leading-[56px] tracking-[-0.02em];
   }
@@ -88,16 +87,12 @@ body{
     @apply md:text-3xl md:w-[550px] md:relative md:font-thin lg:text-xl lg:top-0 lg:left-0 lg:tracking-tight lg:leading-normal lg:w-96 2xl:text-lg 2xl:leading-normal 2xl:w-[280px] max-[320px]:p-2;
   }
 
-  .hero_img{
-    @apply xl:mt-32 xl:scale-125 xl:mr-32 2xl:mt-14 2xl:mr-20 2xl:scale-110;
-  }
-
   .hero_ball {
-    @apply xl:top-16 xl:ml-20 xl:h-96 xl:w-96 max-xl:hidden 2xl:top-16
+    @apply xl:top-16 xl:ml-20 xl:h-96 xl:w-96 max-xl:hidden 2xl:top-16;
   }
 
   .month_btn {
-    @apply z-10 rounded-full p-2 w-60 hover:scale-110 transition-all duration-500 ease-in-out
+    @apply z-10 rounded-full p-2 w-60 hover:scale-110 transition-all duration-500 ease-in-out;
   }
 
   .slide_month_btn {
@@ -113,20 +108,25 @@ body{
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    padding-bottom: 0.2em; /* Adjust this value to control the space between text and underline */
+    padding-bottom: 0.2em;
   }
 
   .hero_btn {
     @apply bg-blue-200 rounded-3xl lg:rounded-full h-10 w-24 z-10 md:h-20 md:w-32 md:text-2xl lg:border-2 lg:text-xl lg:h-10 lg:w-28 font-thin;
   }
 
+  .hero_img{
+    @apply xl:mt-32 xl:scale-125 xl:mr-32 2xl:mt-28 2xl:mr-20 2xl:scale-110;
+  }
+
   .hero-img_res {
     @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[1160px] max-md:bottom-[-520px] max-md:left-[calc(20%-520px)] max-md:top-auto md:left-[calc(60%-300px)] md:top-16;
   }
 
-  @media (min-width: 425px) and (max-width: 768px) {
+  @media (min-width: 430px) and (max-width: 768px) {
     .hero-img_res {
-      left: calc(35% - 500px);
+      left: calc(50% - 500px);
+      bottom: -10px;
     }
   }
 

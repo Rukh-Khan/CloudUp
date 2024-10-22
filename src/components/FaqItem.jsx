@@ -47,7 +47,7 @@ const FaqItem = ({ item, index }) => {
             }}
             className="max-lg:w-full w-96"
           >
-            <p className="p-4 text-xl mt-3 font-medium bg-gradient-to-r from-blue-300 to-blue-200 rounded-3xl lg:border-2 lg:border-rose-300 lg:shadow-lg lg:shadow-rose-500">
+            <p className="p-4 text-xl mt-3 font-medium bg-gradient-to-r from-blue-300 to-blue-200 rounded-3xl">
               {item.answer}
             </p>
           </div>

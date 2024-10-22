@@ -28,11 +28,11 @@ import React from 'react';
 const Subscribe = () => {
   return (
     <section className='relative bg-gradient-to-r from-gray-100 to-blue-100'>
-      <div className="container min-h-screen lg:mt-20 xl:mt-0 z-10">
+      <div className="container h-1/2 lg:min-h-screen lg:mt-20 xl:mt-0 z-10">
         <div className='flex flex-col lg:flex-row justify-center items-center gap-5'>
           <div className="max-lg:hidden bg-[url('../../assets/heroFolder.png')] bg-center bg-contain lg:bg-cover bg-no-repeat min-h-screen w-full relative xl:-left-48 z-10"/>
 
-          <div className='w-full lg:w-1/2 mt-20 lg:mt-0 px-4 lg:px-0'>
+          <div className='w-full lg:w-1/2 mt-20 lg:mt-0 px-4 lg:px-0 '>
             <div className='flex flex-col justify-center items-center'>
               <div className='text-center lg:text-left'>
                 <h1 className='h1 mb-4 text-blue-500'>Subscribe</h1>

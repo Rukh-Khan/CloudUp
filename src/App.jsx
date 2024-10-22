@@ -9,7 +9,7 @@ import Subscribe from "./sections/Subscribe";
 import Footer from "./sections/Footer";
 function App () {
   return (
-    <main className="max-sm:overflow-hidden">
+    <main className="max-lg:overflow-hidden">
       <Header/>
       <Hero/>
       <Feature/>
