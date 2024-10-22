@@ -35,7 +35,7 @@ const Testimonials = () => {
                     </div>
 
                     {/* div 2 */}
-                    <div className='flex flex-row relative gap-2 max-sm:p-2 lg:-right-[20%] max-md:top-10 md:top-0 overflow-hidden max-lg:w-full'>
+                    <div className='flex flex-row relative sm:gap-2 max-sm:p-2 lg:-right-[20%] max-md:top-10 md:top-0 overflow-hidden max-lg:w-full'>
                         {
                             testimonials.map((item, index) => (
                                 <div
@@ -45,7 +45,7 @@ const Testimonials = () => {
                                 >
                                     <div style={{backgroundImage: `url(${item.img})`}} key={index} className="bg-cover z-10 bg-center relative mx-auto max-md:h-60 max-md:w-60 h-80 w-80 rounded-full"/>
 
-                                    <div className="h-2/3 w-full md:h-[420px] sm:w-[500px] border-2 border-black relative bottom-20 rounded-3xl max-md:mx-auto md:left-[26%] lg:left-[12%] xl:left-[28%] 2xl:left-[31%] text-center" >
+                                    <div className="h-2/3 w-[300px] md:h-[420px] sm:w-[500px] border-2 border-black relative bottom-20 rounded-3xl max-md:mx-auto md:left-[26%] lg:left-[12%] xl:left-[28%] 2xl:left-[31%] text-center" >
                                             <h4 className="body-1 mb-0.5 mt-20">{item.name}</h4>
                                             <p className="uppercase max-sm:text-xs">{item.role}</p>
                                             <p className="body-1 mt-2">❝ {item.text} ❞</p>
