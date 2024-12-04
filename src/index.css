@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -17,10 +17,13 @@
   }
 }
 
-body{
-  background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(216, 241, 230, 0.46) 0.1%,
+    rgba(233, 226, 226, 0.28) 90.1%
+  );
 }
-
 
 @layer components {
   .max-container {
@@ -30,11 +33,10 @@ body{
 }
 
 @layer utilities {
-
   .container {
     @apply mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
   }
-  
+
   .nav_ul {
     @apply flex flex-col sm:flex-row gap-16;
   }
@@ -80,15 +82,15 @@ body{
   }
 
   .body-1 {
-    @apply text-[22px] leading-[36px] tracking-[-0.03em];
+    @apply text-[20px] leading-[36px] tracking-[-0.03em];
   }
 
   .hero_sub_head {
-    @apply md:text-3xl md:w-[550px] md:relative md:font-thin lg:text-xl lg:top-0 lg:left-0 lg:tracking-tight lg:leading-normal lg:w-96 2xl:text-lg 2xl:leading-normal 2xl:w-[280px] max-[320px]:p-2;
+    @apply md:text-3xl md:w-[550px] md:relative lg:text-xl lg:top-0 lg:left-0 lg:tracking-tight lg:leading-normal lg:w-96 2xl:text-lg 2xl:leading-normal;
   }
 
   .hero_ball {
-    @apply xl:top-16 xl:ml-20 xl:h-96 xl:w-96 max-xl:hidden 2xl:top-16;
+    @apply xl:top-16 xl:ml-20 xl:h-96 xl:w-96 max-xl:hidden 2xl:top-24;
   }
 
   .month_btn {
@@ -100,11 +102,11 @@ body{
   }
 
   .blue-highlight-with-line {
-    @apply inline-block relative text-blue-600
+    @apply inline-block relative text-blue-600;
   }
 
   .blue-highlight-with-line {
-    background-image: url('../../assets/text-blue-highlight.svg');
+    background-image: url("../../assets/text-blue-highlight.svg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -112,10 +114,10 @@ body{
   }
 
   .hero_btn {
-    @apply bg-blue-200 rounded-3xl lg:rounded-full h-10 w-24 z-10 md:h-20 md:w-32 md:text-2xl lg:border-2 lg:text-xl lg:h-10 lg:w-28 font-thin;
+    @apply bg-blue-200 text-blue-800 p-4 rounded-xl text-2xl font-thin hover:bg-blue-100 transition-all duration-500 ease-in-out;
   }
 
-  .hero_img{
+  .hero_img {
     @apply xl:mt-32 xl:scale-125 xl:mr-32 2xl:mt-28 2xl:mr-20 2xl:scale-110;
   }
 
@@ -138,6 +140,3 @@ body{
     @apply gap-4 md:gap-20 xl:gap-16 2xl:gap-32 max-md:left-5 max-lg:-bottom-[44em] md:-bottom-[62em] xl:-bottom-[48em] 2xl:-bottom-[42em];
   }
 }
-
-
-  
